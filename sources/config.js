@@ -21,7 +21,7 @@ function get () {
 			const fileAsString = fs.readFileSync(`${SPLITS.join("/")}/config.json`, "utf8")
 			const fileAsObject = JSON.parse(fileAsString)
 			fileAsObject.FILE_DIR = "./files"
-			fileAsObject.FILE_COUNTER = 1
+			fileAsObject.FILE_COUNT = 1
 			return fileAsObject
 		} catch (error) {
 			SPLITS.pop()
